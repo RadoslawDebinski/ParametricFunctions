@@ -15,7 +15,7 @@ speed = 200
 fig, ax = plt.subplots()
 polygon, =ax.plot([],[], 'ko', ms = 1)
 # Generate elipse
-time = np.arange(0, 2 * np.pi, 0.01)
+time = np.arange(0, 2 * np.pi, 0.1)
 elipsex, elipsey = np.array([[],[]])
 a, b = 1, 1
 elipsex = a * np.cos(time)
