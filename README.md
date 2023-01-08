@@ -5,9 +5,12 @@ The project involves dynamically changing the axis of rotation to simulate the m
 File CyclogonCurve.py:
 - This program collaborates with preFunc.py (like others in this project) to create curve. Next, it will calculate frames of movement for object given by the operator. -- Input parameters: 
   - Triangle points:
-    -- point1 = input() 
-    -- point2 = input()
-    -- point3 = input()
+    point1 = input() 
+    
+    point2 = input()
+    
+    point3 = input()
+    
 - Given a Numpy library function with the np prefix:
     - function = input()
 - Function shifts in the X and Y axes:
