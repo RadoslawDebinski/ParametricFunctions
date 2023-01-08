@@ -9,6 +9,6 @@ class PreFunc:
     def calc(self, data):
         self.data = data
 
-        out = self.a*self.function(2*self.data - self.x) - self.y
+        out = self.a*self.function(self.data - self.x) - self.y
         # (2/25)*(self.data)*(self.data-10)
         return out

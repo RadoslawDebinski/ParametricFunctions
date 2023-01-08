@@ -86,7 +86,7 @@ ani = FuncAnimation(fig, update, frames=framesAmount,
                     init_func=init, interval = 0.1, blit=True, repeat=False)
 
 plt.plot(xaxis, backGroud,'b', label='background')
-plt.title('Preparation for first laboratory WNO: Cyclogon')
+plt.title('Cyclogon with Curve')
 plt.xlabel('X Axis')
 plt.ylabel('Y Axis')
 plt.autoscale()

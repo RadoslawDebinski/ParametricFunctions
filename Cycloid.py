@@ -69,7 +69,7 @@ ani = FuncAnimation(fig, update, frames=xaxis,
                     init_func=init, interval = 0.1, blit=True, repeat=False)
 
 plt.plot(xaxis, backGroud,'b', label='sin')
-plt.title('Preparation for first laboratory WNO: Cycloid')
+plt.title('Cycloid')
 plt.xlabel('X Axis')
 plt.ylabel('Y Axis')
 plt.autoscale()

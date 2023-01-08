@@ -6,23 +6,23 @@ from matplotlib.animation import FuncAnimation
 import preFunc as pf
 from sys import argv
 
-steps = 4000
+steps = 8000
 stepsForFigures = 20
-framesAmount = 4000
+framesAmount = 8000
 xaxis = np.linspace(0, 20, steps)
 speed = 200
 
 fig, ax = plt.subplots()
 polygon, =ax.plot([],[], 'ko', ms = 1)
 # Generate elipse
-time = np.arange(0, 2 * np.pi, 0.1)
+time = np.arange(0, 2 * np.pi, 1)
 elipsex, elipsey = np.array([[],[]])
 a, b = 1, 1
 elipsex = a * np.cos(time)
 elipsey = b * np.sin(time) + 2
 # Following inverse clock
 polygonPoints, =ax.plot(elipsex,elipsey, 'ro', ms = 1)
-cyclogonx, cyclogony = [[0.5],[5]]
+cyclogonx, cyclogony = [[2],[2]]
 cyclogon, = ax.plot(cyclogonx,cyclogony, 'mo', ms = 1)
 gRads, = ax.plot([],[], 'go', ms = 1)
 ax.axis('equal')
@@ -75,10 +75,10 @@ def update(frame):
     return polygon, cyclogon, polygonPoints, gRads
 
 ani = FuncAnimation(fig, update, frames=framesAmount,
-                    init_func=init, interval = 0.1, blit=True, repeat=False)
+                    init_func=init, interval = 1, blit=True, repeat=False)
 
 plt.plot(xaxis, backGroud,'b', label='background')
-plt.title('Preparation for first laboratory WNO: Cyclogon')
+plt.title('"Elipse" with Curve')
 plt.xlabel('X Axis')
 plt.ylabel('Y Axis')
 plt.autoscale()
