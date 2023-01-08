@@ -7,6 +7,7 @@ File CyclogonCurve.py:
 
   Triangle points:
   
+  
     point1 = input() 
     
     point2 = input()
@@ -23,6 +24,7 @@ File CyclogonCurve.py:
     
     shifty = input()
     
+    
 File ElipseCurve.py:
 
 - In this project, we jump over data input. It can be considered as a demo to show the possibilities of a changeable axis algorithm. By changing line's
